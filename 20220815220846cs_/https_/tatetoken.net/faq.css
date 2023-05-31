@@ -1,0 +1,95 @@
+
+
+.Accordion {
+
+  padding-left: 250px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.Accordion__tabs {
+  padding: 0;
+  max-width: 1440px;
+  list-style: none;
+}
+.Accordion__tab {
+  width: 100%;
+}
+.Accordion__tab__headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(248, 248, 248, 0.5);
+  transition: 0.2s ease all;
+  padding: 20px 15px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.Accordion__tab__headline:hover {
+  background-color: #607bba;
+}
+.Accordion__tab__headline > h4 {
+  user-select: none;
+  text-transform: uppercase;
+  margin: 0;
+}
+.Accordion__tab__headline .icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+
+
+  position: relative;
+}
+.Accordion__tab__headline .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 6px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.Accordion__tab__headline .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 10px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+  transition: 0.2s ease all;
+}
+.Accordion__tab__content {
+  overflow: hidden;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  height: 100%;
+  max-height: 0;
+  transition: 0.4s ease all;
+}
+.Accordion__tab--open .Accordion__tab__headline .icon::after {
+  transform: scaleY(0);
+}
+/*
+     FILE ARCHIVED ON 22:08:46 Aug 15, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:36:53 May 31, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 321.795
+  exclusion.robots: 0.083
+  exclusion.robots.policy: 0.073
+  cdx.remote: 0.066
+  esindex: 0.011
+  LoadShardBlock: 198.146 (3)
+  PetaboxLoader3.datanode: 250.712 (6)
+  load_resource: 229.713 (2)
+  PetaboxLoader3.resolve: 129.878 (2)
+  loaddict: 15.987
+*/
